@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Layout.css" />
+    <link rel="stylesheet" href="mainContent.css" />
+    <link rel="stylesheet" href="SPSettings.css" />
+  </head>
+  <body>
+    <!-- Side Header -->
+    <header class="sideHeader" id="sideHeader">
+      <button class="sideBarTabs" id="dashboard">
+        <img src="./images/dashboard.png" class="sideBarIcons" />
+        <br />
+        Dashboard
+      </button>
+
+      <button class="sideBarTabs" id="socialProfiles">
+        <img src="./images/socialProfiles.png" class="sideBarIcons" />
+        <br />
+        Social Profiles
+      </button>
+      <button class="sideBarTabs" id="tools">
+        <img src="./images/tools.png" class="sideBarIcons" />
+        <br />
+        Tools
+      </button>
+      <button class="sideBarTabs" id="settings">
+        <img src="./images/settings.png" class="sideBarIcons" />
+        <br />
+        Settings
+      </button>
+      <button class="sideBarTabs" id="proxyManager">
+        <img src="./images/ProxyManager.png" class="sideBarIcons" />
+        <br />
+        Proxy Manager
+      </button>
+      <button class="sideBarTabs" id="myAccount">
+        <img src="./images/MyAccount.png" class="sideBarIcons" />
+        <br />
+        My Account
+      </button>
+      <button class="sideBarTabs" id="destinationLists">
+        <img src="./images/DestinationLists.png" class="sideBarIcons" />
+        <br />
+        Destination Lists
+      </button>
+      <button class="sideBarTabs" id="campaigns">
+        <img src="./images/campaign.png" class="sideBarIcons" />
+        <br />
+        Campaigns
+      </button>
+    </header>
+
+    <!-- Top header -->
+
+    <header class="topHeader" id="topHeader">
+      <button class="topHeaderTabs" id="settings">Settings</button>
+      <button class="topHeaderTabs" id="ignore">Ignore</button>
+      <button class="topHeaderTabs" id="editProfile">Edit Profile</button>
+      <button class="topHeaderTabs" id="scrapeTools">Scrape Tools</button>
+      <button class="topHeaderTabs" id="flImport">FL Import</button>
+      <button class="topHeaderTabs" id="notes">Notes</button>
+      <button class="topHeaderTabs" id="twoFactor">
+        Two Factor Authentication
+      </button>
+    </header>
+
+    <!-- This page will change via JS depending on the content/tab being chosen -->
+
+    <article class="mainContentWrapper" id="mainContent">
+      <!-- This is the top header with the minor settings -->
+      <div class="contentHeader">
+        <img src="images/Instagram.png" alt="" />
+        <!-- JS will change this depending on the service being chosen  -->
+        <div class="serviceType" id="serviceType">Instagram</div>
+
+        <!-- DropDown Menu for Social Media Service-->
+        <div class="dropdown">
+          <button class="dropbtn" id="dropbtn">My Instagram</button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="">Link 1</a>
+            <a href="">Link 2</a>
+            <a href="">Link 3</a>
+          </div>
+        </div>
+
+        <!-- Other misc Options  -->
+        <div class="otherOptions" id="miscOptions">
+          <a href="">BROWSE EMBEDDED</a>
+          <a href="">TOOLS</a>
+          <div>Followers:0</div>
+        </div>
+      </div>
+
+      <!-- Account Information & Login Forms -->
+      <div class="userAccountInformation" id="userAccountInformation">
+        <div class="accountTitle">ACCOUNT</div>
+        <form action="">
+          <input
+            type="text"
+            name=""
+            id=""
+            class="accountName"
+            placeholder="Account Name"
+          />
+          <br />
+          <input
+            type="text"
+            name=""
+            id=""
+            class="accountDescription"
+            placeholder="Account Description/extra info(email, usernames, phone number)"
+          />
+        </form>
+        <div class="tagsHeader">
+          Tags (social profiles can be sorted by their tags. Use ',' to separate
+          several tags)
+        </div>
+        <input type="text" name="userTags" id="userTags" />
+        <br />
+        <input type="checkbox" name="proxySettings" id="proxySettings" />
+        <span class="proxyText"> Show Proxy Settings </span>
+        <div class="userLogin">
+          <span class="userLoginText">
+            Enter the username and password for your account
+          </span>
+          <form action="">
+            <input type="text" id="userName" placeholder="User Name" />
+            <br />
+            <input type="text" id="userPassword" placeholder="Password" />
+            <a id="userPasswordHint" href="">show/hide password</a>
+          </form>
+        </div>
+      </div>
+
+      <!-- Account Verification & Successful Upload -->
+      <div class="verifyAccountContainer">
+        <div class="statusHeader">
+          <span class="statusHeaderText"> STATUS: </span>
+          <div class="accountStatus">
+            Pending
+
+            <span class="helpText">
+              Add account's credentials and click on Verify Account for
+              validation
+            </span>
+          </div>
+        </div>
+        <div class="accountSetupButtons">
+          <button id="verifyAccount">VERIFY ACCOUNT</button>
+          <button id="browse">BROWSE</button>
+        </div>
+        <div id="uniqueName">Unique name:</div>
+      </div>
+    </article>
+
+    <!-- All Scripts will be loaded through the main module -->
+    <!-- <script type="module" src="script.js"></script> -->
+    <script src="script.js"></script>
+  </body>
+</html>

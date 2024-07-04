@@ -1,0 +1,123 @@
+.otherOptions {
+  margin-left: 0.5em;
+  display: flex;
+  width: 10%;
+  justify-content: space-evenly;
+  background-color: b;
+}
+
+.otherOptions a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: rgb(32, 100, 140);
+}
+
+.accountTitle {
+  font-size: 2em;
+  margin-left: 5px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.userAccountInformation form {
+  margin-left: 20px;
+}
+
+.accountName,
+.accountDescription {
+  width: 20%;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+.accountDescription {
+  padding-bottom: 90px;
+}
+
+.tagsHeader {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+#userTags {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  width: 12%;
+  padding: 10px;
+}
+
+#proxySettings {
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.proxyText {
+  font-size: 20px;
+}
+
+.userLogin {
+  font-size: 22px;
+}
+
+.userLoginText {
+    margin-left: 20px;
+}
+
+.userLogin form {
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.userLogin input {
+    width: 10%;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.userLogin a {
+    text-decoration: none;
+    color: rgb(32, 100, 140);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.statusHeader {
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.statusHeaderText {
+    font-size: 36px;
+    
+}
+
+.accountStatus {
+    margin-top: 10px;
+    margin-left: 18px;
+    margin-bottom: 75px;
+    font-size: 20px;
+}
+
+.helpText {
+    margin-left: 20px;
+}
+
+.accountSetupButtons button{
+    font-size: 32px;
+    padding: 16px;
+    margin-left: 40px;
+    background-color: var(--red);
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+
+#uniqueName {
+    margin: 50px 40px;
+    font-size: 28px;
+}
+

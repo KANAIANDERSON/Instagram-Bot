@@ -1,0 +1,70 @@
+:root {
+  --red: #db324d;
+  --backGround: #ebebd3;
+  --sideBar: #ff9000;
+}
+
+button:hover {
+  cursor: pointer; 
+}
+
+body {
+  background-color: lightgray;
+}
+
+.wrap {
+  position: relative;
+  left: 200px;
+}
+
+.topHeader {
+  position: relative;
+  left: 3%;
+  display: flex;
+  flex-direction: row;
+}
+
+.topHeaderTabs {
+  left: 50px;
+  background-color: var(--red);
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  font-size: 2em;
+  padding: 10px;
+  margin: 5px;
+  margin-left: 30px;
+}
+
+.sideHeader {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 97%;
+  bottom: 0px;
+  background-color: var(--sideBar);
+}
+
+.sideBarTabs {
+  position: relative;
+  width: 100%;
+  padding: 20px 40px;
+  margin: auto;
+  text-align: center;
+  background: none;
+  border: none;
+}
+
+.sideBarTabs:active {
+  background-color: white;
+}
+
+.sideBarTabs img:active {
+  background-color: red;
+}
+
+.sideBarTabs img {
+  height: 40px;
+  display: flex;
+  margin: auto;
+}
+
